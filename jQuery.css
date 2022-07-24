@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1024px;
+}
+.wrap .header .media{
+    display: flex;
+    background: #f6f6f5;
+    padding: 8px;
+    flex-direction: row-reverse;
+}
+.media .facebook{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-around;
+    color: #4460a0;
+    text-decoration: none;
+    width: 75px;
+    border-right: 2px solid #cccccc;
+    padding-right: 8px;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 75px;
+    justify-content: space-around;
+    color: #00aacc;
+    text-decoration: none;
+    
+    padding-left: 8px;
+}
+.menu{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    margin-top: 15px;
+}
+.menu li a{
+    display: block;
+    color: #00cc99;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+}
+.menu li:hover{
+    box-shadow: 0px 3px #00cc99;
+}
+.menu > ul > li > a{
+    position: relaive;
+}
+.menu .dropdown-open{ 
+    position: absolute;
+    z-index: 99999;
+    width: 95px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    justify-content: space-between;
+}
+.menu .dropdown-open .link{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.menu .dropdown-open .link:hover{
+    background-color: #0ecd9c;
+    color: #fff;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.bannertext{
+    background: rgba(0%,0%,0%,0.2);
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    margin-bottom: 20px;
+    top: 120px;
+    width: 93%;
+    margin-left: 37px;
+    line-height: 1.5;
+    z-index: 999;
+}
+.swiper {
+    width: 100%;
+    height: 346px;
+    background-size: contain;
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    padding: 10px;  
+} 
+.course-item{
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px #cccccc;
+    width: 300px;  
+    align-items: center;
+    padding: 20px;
+}
+.course img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100%;
+}
+.course-item h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.course-item p, .course-item li{
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.diff table{
+    width: 840px;
+    margin-top: 80px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.diff h3{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.diff th, .diff td{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+.diff th{
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+.diff .bold{
+    color: #00cc99;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom, #00654c, #009771);
+    position: relative;
+    height: 350px;
+    margin-top: 60px;
+}
+.form .title{
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    top: 5%;
+    right: 35%;
+    line-height: 1.5;
+}
+.form textarea{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    border-radius: 1%;
+    bottom: 10%;
+    left: 3.5%;
+}
+.form .name, .form .phone, .form .mail{
+    display: block;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 425px;
+}
+.form .info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 180px;
+    right: 1%;
+    bottom: 20%;
+    justify-content: space-around;
+    top: 25%;
+}
+.form .botton{
+    position: absolute;
+    color:white;
+    background: #00cc99;
+    border: #00cc99;
+    width: 60px;
+    height: 30px;
+    bottom: 10%;
+    right: 3.5%;
+}
+.form .botton:hover{
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.footer .contactUs, .footer .phonenum{
+    color: #e12d80;
+}
+.top{
+    position: fixed;
+    width: 70px;
+    height: 35px;
+    background: #00cc99;
+    color: white;
+    border-radius: 5%;
+    border: #00cc99;
+    right: 2%;
+    bottom: 3%;
+}
+.top:hover{
+    cursor: pointer;
+    background:#009771;
+    font-weight: bold;
+}
